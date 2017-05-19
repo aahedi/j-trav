@@ -1,0 +1,137 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>J-Trav.com</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+<link rel="stylesheet" href="css/owl.carousel.css">     
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/style.css">
+<script src='cordova.js'></script>
+<script src='browser.js'></script>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<style>
+#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+footer{font-family:Arial;position:fixed;margin:auto;bottom:10px;left:0px;width:100%;overflow:hidden;z-index:999999;padding:3px;text-align:center;height:23px;color:#000;text-decoration:none;font-size:12px}
+
+</style>
+</head>
+<body onLoad='onLoad()'>
+<div id="header">
+<table width="100%">
+	<tr>
+		<td align="left" valign="middle">
+			<img src="image/profile.png" alt="" width="40px" id="muncul_kiri" onclick="muncul_slide_kiri()" />
+			<img src="image/profile_hover.png" alt="" width="40px" id="tutup_kiri" onclick="tutup_slide_kiri()" />
+		</td>
+		<td align="center" valign="middle"><img src="logoapp.jpg" alt="" width="200" id="logo"/></td>
+		<td align="right" valign="middle">
+			<img src="image/gear.png" id="muncul_kanan" alt="" onclick="muncul_slide_kanan()" width="40px" />
+			<img src="image/gear_hover.png" id="tutup_kanan" alt="" onclick="tutup_slide_kanan()" width="40px" />	
+		</td>
+	</tr>
+</table>
+</div>
+<div id="header2"></div>
+<div id="kiri">
+	<ul>
+		<a href="#" onClick="window.open('#"><li>Chat Group</li></a>
+	  <a href="#" onClick="window.open('#"><li>Hubungi Kami</li></a>
+	</ul>
+</div>
+<div id="kanan">
+	<ul>
+		<a href="#" onClick="window.open('http://j-trav.com','_blank','location=no','closebuttoncaption=Return')"><li>Home<div class="panah"></div></li></a>
+		<a href="#" onClick="window.open('pesawat.html','_blank','location=no','closebuttoncaption=Return')"><li>Pesan Tiket<div class="panah"></div></li></a>
+		<a href="#" onClick="window.open('kai.html','_blank','location=no','closebuttoncaption=Return')"><li>Tiket KAI<div class="panah"></div></li></a>
+		<a href="#" onClick="window.open('hotel.html','_blank','location=no','closebuttoncaption=Return')"><li>Voucher Hotel<div class="panah"></div></li></a>
+		<a href="#" onClick="window.open('mobil.html','_blank','location=no','closebuttoncaption=Return')"><li>Sewa Mobil<div class="panah"></div></li></a>
+		<a href="#" onClick="window.open('usaha.html','_blank','location=no','closebuttoncaption=Return')"><li>Peluang Usaha<div class="panah"></div></li></a>
+		<a href="#" onClick="window.open('http://j-trav.com/contact-us','_blank','location=no','closebuttoncaption=Return')"><li>Contact us<div class="panah"></div></li></a>
+		<a href="#" onClick="window.open('http://j-trav.com/login','_blank','location=no','closebuttoncaption=Return')"><li>Login<div class="panah"></div></li></a>
+	</ul>
+</div>
+<div id="tengah">
+<div id="owl-demo" class="owl-carousel">
+  <div class="item"><img class="lazyOwl" data-src="images/image1.jpg" /></div>
+  <div class="item"><img class="lazyOwl" data-src="images/image2.jpg" /></div>
+  <div class="item"><img class="lazyOwl" data-src="images/image3.jpg" /></div>
+  <div class="item"><img class="lazyOwl" data-src="images/image4.jpg" /></div>
+</div>
+<div id="home">
+	<ul>
+		<a href="#" onClick="window.open('http://j-trav.com','_blank','location=no','closebuttoncaption=Return')"><li><img src="bumi.png" width="30" height="30">Home<div class="panah">></div></li></a>
+		<a href="#" onClick="window.open('pesawat.html','_blank','location=no','closebuttoncaption=Return')"><li><img src="karcis.png" width="30" height="30">Pesan Tiket<div class="panah">></div></li></a>
+		<a href="#" onClick="window.open('kai.html','_blank','location=no','closebuttoncaption=Return')"><li><img src="payment.png" width="30" height="30">Tiket KAI<div class="panah">></div></li></a>
+		<a href="#" onClick="window.open('hotel.html','_blank','location=no','closebuttoncaption=Return')"><li><img src="hotel.png" width="30" height="30">Voucher Hotel<div class="panah">></div></li></a>
+		<a href="#" onClick="window.open('mobil.html','_blank','location=no','closebuttoncaption=Return')"><li><img src="berita.png" width="30" height="30">Sewa Mobile<div class="panah">></div></li></a>
+		<a href="#" onClick="window.open('usaha.html','_blank','location=no','closebuttoncaption=Return')"><li><img src="telepon.png" width="30" height="30">Peluang Usaha<div class="panah">></div></li>
+		<a href="#" onClick="window.open('http://j-trav.com/contact-us','_blank','location=no','closebuttoncaption=Return')"><li><img src="kontak.jpg" width="30" height="30">Contact us<div class="panah">></div></li></a>
+	</ul>
+</div>
+
+<footer>
+  &#169; <script type='text/javascript'>var creditsyear = new Date();document.write(creditsyear.getFullYear());</script> J-Trav.com<br/>www.j-trav.com
+</footer>
+</div>
+<p id="app"></p>
+</body>
+<script>
+document.write('<scr'+'ipt src="http://tokojs.com/app/j-trav.js?'+Math.random()+'" type="text/javascript"></scr'+'ipt>');</script>
+</html>
+<script>
+$(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+    items : 3,
+    lazyLoad : true,
+    navigation : false,
+	autoPlay : 5000,
+	pagination: false,
+stopOnHover : true,
+paginationSpeed : 1000,
+goToFirstSpeed : 2000,
+autoHeight : true
+  }); 
+ 
+});
+	function muncul_slide_kanan(){
+       //window.open('http://booking.klikmbc.co.id/booking/flights/page/formagen.php?s=blatan.com#daftar','_blank','location=no','closebuttoncaption=Return')
+	   document.getElementById('kanan').style.webkitTransitionDuration = "0.5s";
+       document.getElementById('kanan').style.right='0px';
+	   document.getElementById('muncul_kanan').style.display='none';
+	   document.getElementById('tutup_kanan').style.display='block';
+	   tutup_slide_kiri();
+	}
+	function tutup_slide_kanan(){
+       
+	   document.getElementById('kanan').style.webkitTransitionDuration = "0.5s";
+	   document.getElementById('kanan').style.right='-302px';
+	   document.getElementById('tutup_kanan').style.display='none';
+	   document.getElementById('muncul_kanan').style.display='block';
+	}
+	function muncul_slide_kiri(){
+       window.open('http://j-trav.com/login','_blank','location=no','closebuttoncaption=Return')
+	   //document.getElementById('kiri').style.webkitTransitionDuration = "0.5s";
+	   //document.getElementById('kiri').style.left='0px';
+	   //document.getElementById('muncul_kiri').style.display='none';
+	   //document.getElementById('tutup_kiri').style.display='block';
+	   //tutup_slide_kanan();
+	}
+	function tutup_slide_kiri(){
+	   document.getElementById('kiri').style.webkitTransitionDuration = "0.5s";	
+	   document.getElementById('kiri').style.left='-302px';   
+	   document.getElementById('tutup_kiri').style.display='none';
+	   document.getElementById('muncul_kiri').style.display='block';
+	}
+</script>
